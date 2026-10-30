@@ -1,0 +1,103 @@
+{
+  "model_architecture": "MobileNetV3-Small (PyTorch CPU)",
+  "parameter_count": 1521956,
+  "weights_file": "mobilenetv3_waste.pt",
+  "trained_timestamp": "2026-10-29T13:56:49.374174+00:00",
+  "input_resolution": [
+    224,
+    224
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "classes": [
+    "wet_organic",
+    "dry_recyclable",
+    "sanitary",
+    "hazardous"
+  ],
+  "class_to_idx": {
+    "wet_organic": 0,
+    "dry_recyclable": 1,
+    "sanitary": 2,
+    "hazardous": 3
+  },
+  "hyperparameters": {
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "optimizer": "AdamW",
+    "seed": 42
+  },
+  "dataset_split_sizes": {
+    "train": 112,
+    "validation": 24,
+    "held_out_test": 24
+  },
+  "evaluation_metrics": {
+    "overall_accuracy": 0.25,
+    "macro_f1": 0.1,
+    "per_class": {
+      "wet_organic": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 6
+      },
+      "dry_recyclable": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1_score": 0.4,
+        "support": 6
+      },
+      "sanitary": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 6
+      },
+      "hazardous": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 6
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ]
+    ]
+  },
+  "operational_status": "prototype_fixture_test_mode"
+}
