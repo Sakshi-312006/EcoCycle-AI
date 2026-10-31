@@ -31,3 +31,4 @@ numpy>=1.26.4,<3
 
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
+torchvision
